@@ -70,7 +70,7 @@ class BaccaratHand:
         return f"[{', '.join(str(card) for card in self.cards)}]"
 
 @dataclass
-class Player:
+class BaccaratPlayer:
     """
     Implementação de um jogador no bacará
     """
@@ -103,7 +103,7 @@ class BaccaratGame:
     Implementation of the Baccarat game.
     """
 
-    def __init__(self, player: Player):
+    def __init__(self, player: BaccaratPlayer):
         self.deck = BaccaratDeck()
         self.player_hand = BaccaratHand()
         self.banker_hand = BaccaratHand()

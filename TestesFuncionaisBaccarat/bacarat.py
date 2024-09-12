@@ -6,12 +6,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Agora você pode importar os módulos do diretório 'gamble'
 from gamble import models as g
-from gamble import Player
+from gamble import BaccaratPlayer
 from typing import List
 
 def main():
     # Criando um jogador com saldo inicial de 100
-    player = Player(balance=100)
+    player = BaccaratPlayer(balance=100)
 
     # Criando o jogo e passando o jogador
     game = g.BaccaratGame(player)
